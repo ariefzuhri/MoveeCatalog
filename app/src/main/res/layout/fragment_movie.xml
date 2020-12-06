@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CustomTheme"
+    tools:context=".movie.MovieFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_in_theaters"
+            style="@style/TextView.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/in_theaters"
+            app:layout_constraintBottom_toBottomOf="@+id/img_icon_in_theaters"
+            app:layout_constraintStart_toEndOf="@+id/img_icon_in_theaters"
+            app:layout_constraintTop_toTopOf="@+id/img_icon_in_theaters" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_in_theaters"
+            style="@style/HorizontalListView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_in_theaters"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_in_theaters"
+            tools:listitem="@layout/item_grid_in_theaters_movie" />
+
+        <TextView
+            android:id="@+id/tv_release_today"
+            style="@style/TextView.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/tv_in_theaters"
+            android:text="@string/release_today"
+            app:layout_constraintBottom_toBottomOf="@+id/img_icon_release_today"
+            app:layout_constraintStart_toEndOf="@+id/img_icon_release_today"
+            app:layout_constraintTop_toTopOf="@+id/img_icon_release_today" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_release_today"
+            style="@style/HorizontalListView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_release_today"
+            tools:listitem="@layout/item_grid_release_today_movie" />
+
+        <TextView
+            android:id="@+id/tv_upcoming"
+            style="@style/TextView.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/upcoming"
+            app:layout_constraintBottom_toBottomOf="@+id/img_icon_upcoming"
+            app:layout_constraintStart_toEndOf="@+id/img_icon_upcoming"
+            app:layout_constraintTop_toTopOf="@+id/img_icon_upcoming" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_upcoming"
+            style="@style/HorizontalListView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_upcoming"
+            tools:listitem="@layout/item_grid_upcoming_movie" />
+
+        <TextView
+            android:id="@+id/tv_trending"
+            style="@style/TextView.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv_in_theaters"
+            android:layout_marginStart="8dp"
+            android:text="@string/trending"
+            app:layout_constraintBottom_toBottomOf="@+id/img_icon_trending"
+            app:layout_constraintStart_toEndOf="@+id/img_icon_trending"
+            app:layout_constraintTop_toTopOf="@+id/img_icon_trending" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_movies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_trending"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_trending"
+            tools:listitem="@layout/item_movie" />
+
+        <TextView
+            android:id="@+id/tv_load_more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/TextView.Subtitle"
+            android:layout_marginBottom="32dp"
+            android:text="@string/load_more"
+            android:textColor="@color/colorLightBlue"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/rv_movies"
+            app:layout_constraintStart_toStartOf="@+id/rv_movies"
+            app:layout_constraintTop_toBottomOf="@+id/rv_movies" />
+
+        <TextView
+            android:id="@+id/tv_no_release_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextView.Caption"
+            android:text="@string/no_release_today"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@+id/tv_release_today"
+            app:layout_constraintTop_toBottomOf="@+id/tv_release_today"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/img_icon_in_theaters"
+            style="@style/Icon"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_local_play"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_icon_release_today"
+            style="@style/Icon"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_update"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_in_theaters" />
+
+        <ImageView
+            android:id="@+id/img_icon_upcoming"
+            style="@style/Icon"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_video_call"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_release_today" />
+
+        <ImageView
+            android:id="@+id/img_icon_trending"
+            style="@style/Icon"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_whatshot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_upcoming" />
+
+        <TextView
+            android:id="@+id/tv_view_all_in_theaters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextView.Subtitle"
+            android:layout_marginEnd="16dp"
+            android:text="@string/view_all"
+            android:textColor="@color/colorLightBlue"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_in_theaters"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_view_all_release_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextView.Subtitle"
+            android:text="@string/view_all"
+            android:textColor="@color/colorLightBlue"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_release_today"
+            app:layout_constraintEnd_toEndOf="@+id/tv_view_all_in_theaters" />
+
+        <TextView
+            android:id="@+id/tv_view_all_upcoming"
+            style="@style/TextView.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_all"
+            android:textColor="@color/colorLightBlue"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_upcoming"
+            app:layout_constraintEnd_toEndOf="@+id/tv_view_all_in_theaters" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/ProgressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_in_theaters" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_load_more"
+            style="@style/ProgressBar"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_movies"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

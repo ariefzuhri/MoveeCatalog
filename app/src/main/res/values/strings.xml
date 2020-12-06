@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">movee</string>
+    <string name="widget_title">My favorite movies</string>
+
+    <string name="movie">Movies</string>
+    <string name="tvshow">TV Shows</string>
+    <string name="discover">Discover</string>
+
+    <string name="full_title">Full title:</string>
+    <string name="overview">Storyline</string>
+
+    <string name="tvs_episode">Episodes</string>
+    <string name="tvs_season">Seasons</string>
+    <string name="tvs_network">Original network</string>
+
+    <string name="cd_poster">Movie poster</string>
+    <string name="cd_tvs_poster">Television show poster</string>
+    <string name="cd_backdrop">Movie screenshot</string>
+    <string name="cd_tvs_backdrop">Television show screenshot</string>
+    <string name="cd_in_theaters">Movies currently playing</string>
+    <string name="cd_tvs_on_air">TV shows currently airing</string>
+    <string name="cd_credit">People who are involved in filmmaking</string>
+    <string name="cd_release_today_movie">Today\'s movies release</string>
+    <string name="cd_upcoming_movie">Upcoming movies</string>
+    <string name="cd_icon">An icon</string>
+
+    <string name="minute">m</string>
+    <string name="hour">h</string>
+    <plurals name="episode">
+        <item quantity="one">episode</item>
+        <item quantity="other">episodes</item>
+    </plurals>
+    <plurals name="season">
+        <item quantity="one">season</item>
+        <item quantity="other">seasons</item>
+    </plurals>
+    <plurals name="minuteperepisode">
+        <item quantity="one">minute/episode</item>
+        <item quantity="other">minutes/episode</item>
+    </plurals>
+
+    <string name="crew">Featured crew</string>
+    <string name="cast">Featured actor</string>
+
+    <string name="setting">Settings</string>
+    <string name="favorite">Favorite</string>
+    <string name="add_favorite">Add to favorites</string>
+    <string name="remove_favorite">Remove from favorites</string>
+
+    <string name="datanotfound">(data not found)</string>
+    <string name="notconnected">Sorry, we couldn\'t load data. Please, make sure your internet is works fine.</string>
+    <string name="error">Data failed to load</string>
+    <string name="ok">OK</string>
+
+    <string name="trending">Trending now</string>
+    <string name="in_theaters">Now playing</string>
+    <string name="on_air">Airing today</string>
+    <string name="release_today">Release today</string>
+    <string name="upcoming">Upcoming</string>
+
+    <string name="search_hint">Discover movies or tv shows…</string>
+    <string name="loading">Loading…</string>
+    <string name="favorite_movies">Favorite movies</string>
+    <string name="favorite_tvshows">Favorite tv shows</string>
+    <string name="search_results">Search results</string>
+    <string name="search_info">There are no results to display.</string>
+    <string name="result_for">for</string>
+    <string name="remove_favorite_success">Removed from favorites</string>
+    <string name="add_favorite_success">Added to favorites</string>
+    <string name="no_favorite">Your list is empty.</string>
+    <string name="no_release_today">(no movie was released today)</string>
+
+    <string name="app_language">Application language</string>
+    <string name="select_language">Select language</string>
+    <string name="notification">Notification</string>
+    <string name="daily_reminder">Daily reminder</string>
+    <string name="daily_reminder_summary">Get daily notifications so you won\'t forget to open movee</string>
+    <string name="release_today_reminder">Release today reminder</string>
+    <string name="release_today_reminder_summary">Get notified any movies newly released</string>
+
+    <string name="key_language" translatable="false">language</string>
+    <string name="key_daily_reminder" translatable="false">daily_reminder</string>
+    <string name="key_release_today_reminder" translatable="false">release_today_reminder</string>
+
+    <string name="daily_reminder_title">Let\'s see what\'s new</string>
+    <string name="today_release_reminder_title">Today\'s movies released</string>
+    <string name="daily_reminder_message">Don\'t forget to open movee to see the latest catalog</string>
+
+    <string name="view_all">View all</string>
+    <string name="load_more">Load more</string>
+
+    <string-array name="language">
+        <item>Default</item>
+        <item>English</item>
+        <item>Bahasa Indonesia</item>
+    </string-array>
+
+    <string-array name="language_code">
+        <item>default</item>
+        <item>en</item>
+        <item>in</item>
+    </string-array>
+</resources>

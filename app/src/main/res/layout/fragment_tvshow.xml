@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CustomTheme"
+    tools:context=".tvshow.TVShowFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_tvs_on_air"
+            style="@style/TextView.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/on_air"
+            app:layout_constraintBottom_toBottomOf="@+id/img_tvs_icon_on_air"
+            app:layout_constraintStart_toEndOf="@+id/img_tvs_icon_on_air"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tvs_on_air"
+            style="@style/HorizontalListView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_tvs_on_air"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tvs_on_air"
+            tools:listitem="@layout/item_grid_on_air_tvshow" />
+
+        <TextView
+            android:id="@+id/tv_tvs_trending"
+            style="@style/TextView.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rv_tvs_on_air"
+            android:layout_marginStart="8dp"
+            android:text="@string/trending"
+            app:layout_constraintBottom_toBottomOf="@+id/img_tvs_icon_trending"
+            app:layout_constraintStart_toEndOf="@+id/img_tvs_icon_trending"
+            app:layout_constraintTop_toTopOf="@+id/img_tvs_icon_trending" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tvshows"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_tvs_trending"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tvs_trending"
+            app:layout_constraintVertical_bias="0.0"
+            tools:listitem="@layout/item_tvshow" />
+
+        <TextView
+            android:id="@+id/tv_tvs_load_more"
+            style="@style/TextView.Subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/load_more"
+            android:textAlignment="center"
+            android:textColor="@color/colorLightBlue"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/rv_tvshows"
+            app:layout_constraintStart_toStartOf="@+id/rv_tvshows"
+            app:layout_constraintTop_toBottomOf="@+id/rv_tvshows" />
+
+        <ImageView
+            android:id="@+id/img_tvs_icon_on_air"
+            style="@style/Icon"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_airplay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_tvs_icon_trending"
+            style="@style/Icon"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_whatshot"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_tvs_on_air" />
+
+        <TextView
+            android:id="@+id/tv_tvs_view_all_on_air"
+            style="@style/TextView.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/view_all"
+            android:textColor="@color/colorLightBlue"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_tvs_on_air"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_tvs"
+            style="@style/ProgressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tvs_on_air" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_tvs_load_more"
+            style="@style/ProgressBar"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_tvshows"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

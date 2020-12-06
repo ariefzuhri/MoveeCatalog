@@ -1,0 +1,2 @@
+include ':app', ':myfavoritemovies'
+rootProject.name='moveeCatalog'

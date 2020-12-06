@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Favorite Movies</string>
+
+    <string name="cd_poster">Poster film</string>
+    <string name="cd_tvs_poster">Poster acara televisi</string>
+
+    <string name="loading">Memuat…</string>
+    <string name="favorite_movies">Film favorit</string>
+    <string name="favorite_tvshows">Acara tv favorit</string>
+    <string name="no_favorite">Data Anda masih kosong.</string>
+
+</resources>

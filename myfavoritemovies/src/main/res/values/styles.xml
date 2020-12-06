@@ -1,0 +1,47 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorMidnightBlue</item>
+        <item name="colorPrimaryDark">@color/colorMidnightBlue</item>
+        <item name="colorAccent">@color/colorMidnightBlue</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="Headline">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Caption">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="RoundedImageView" parent="AppTheme">
+        <item name="sriv_left_bottom_corner_radius">5dp</item>
+        <item name="sriv_left_top_corner_radius">5dp</item>
+        <item name="sriv_right_bottom_corner_radius">5dp</item>
+        <item name="sriv_right_top_corner_radius">5dp</item>
+    </style>
+
+    <style name="DefaultTheme">
+        <item name="android:background">@color/colorMidnightBlue</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="RoundedImageView.Poster">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/loading_icon</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+</resources>

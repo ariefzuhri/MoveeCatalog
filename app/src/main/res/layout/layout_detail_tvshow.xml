@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CustomTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_tvs_episode_detail"
+        style="@style/Icon"
+        android:src="@drawable/ic_play_circle_outline"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tvs_episode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_tvs_episode" />
+
+    <TextView
+        android:id="@+id/tv_tvs_episode"
+        style="@style/TextView.Subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/tvs_episode"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tvs_episode_detail"
+        app:layout_constraintStart_toEndOf="@+id/img_tvs_episode_detail"
+        app:layout_constraintTop_toTopOf="@+id/tv_tvs_episode_detail" />
+
+    <TextView
+        android:id="@+id/tv_tvs_episode_detail"
+        style="@style/TextView.Subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/loading"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_tvs_season_detail"
+        style="@style/Icon"
+        android:src="@drawable/ic_ondemand_video"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tvs_season"
+        app:layout_constraintStart_toStartOf="@+id/img_tvs_episode_detail"
+        app:layout_constraintTop_toTopOf="@+id/tv_tvs_season" />
+
+    <TextView
+        android:id="@+id/tv_tvs_season"
+        style="@style/TextView.Subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/tvs_season"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tvs_season_detail"
+        app:layout_constraintStart_toEndOf="@+id/img_tvs_season_detail"
+        app:layout_constraintTop_toTopOf="@+id/tv_tvs_season_detail" />
+
+    <TextView
+        android:id="@+id/tv_tvs_season_detail"
+        style="@style/TextView.Subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/loading"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tvs_episode_detail" />
+
+    <ImageView
+        android:id="@+id/img_tvs_network_detail"
+        style="@style/Icon"
+        android:src="@drawable/ic_tv"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tvs_network"
+        app:layout_constraintStart_toStartOf="@+id/img_tvs_episode_detail"
+        app:layout_constraintTop_toTopOf="@+id/tv_tvs_network" />
+
+    <TextView
+        android:id="@+id/tv_tvs_network"
+        style="@style/TextView.Subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/tvs_network"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_tvs_network_detail"
+        app:layout_constraintStart_toEndOf="@+id/img_tvs_network_detail"
+        app:layout_constraintTop_toTopOf="@+id/tv_tvs_network_detail" />
+
+    <TextView
+        android:id="@+id/tv_tvs_network_detail"
+        style="@style/TextView.Subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/loading"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tvs_season_detail" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="122dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

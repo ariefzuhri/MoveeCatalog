@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Favorite Movies</string>
+
+    <string name="cd_poster">Movie poster</string>
+    <string name="cd_tvs_poster">Television show poster</string>
+
+    <string name="loading">Loading…</string>
+    <string name="favorite_movies">Favorite movies</string>
+    <string name="favorite_tvshows">Favorite tv shows</string>
+    <string name="no_favorite">Your list is empty.</string>
+
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CustomTheme"
+    tools:context=".discover.DiscoverFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_shape_discover"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:theme="@style/Widget.AppCompat.Light.SearchView"
+            app:layout_constraintBottom_toBottomOf="@+id/img_shape_discover"
+            app:layout_constraintEnd_toEndOf="@+id/img_shape_discover"
+            app:layout_constraintStart_toStartOf="@+id/img_shape_discover"
+            app:layout_constraintTop_toTopOf="@+id/img_shape_discover"
+            app:queryHint="@string/search_hint"/>
+
+        <TextView
+            android:id="@+id/tv_search_results"
+            style="@style/TextView.Headline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/search_results"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/img_shape_discover"
+            app:layout_constraintTop_toBottomOf="@+id/search_view" />
+
+        <TextView
+            style="@style/TextView.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@string/search_info"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_search_results" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_movies_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/rv_tvshows_result"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/progress_bar_discover"
+            tools:listitem="@layout/item_result_movie" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_tvshows_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/img_shape_discover"
+            app:layout_constraintTop_toBottomOf="@+id/rv_movies_result"
+            tools:listitem="@layout/item_result_tvshow" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_discover"
+            style="@style/ProgressBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_search_results" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

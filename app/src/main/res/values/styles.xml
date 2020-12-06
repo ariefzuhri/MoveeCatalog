@@ -1,0 +1,75 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorMidnightBlue</item>
+        <item name="colorPrimaryDark">@color/colorMidnightBlue</item>
+        <item name="colorAccent">@color/colorLightBlue</item>
+    </style>
+
+    <style name="CustomTheme">
+        <item name="android:background">@color/colorMidnightBlue</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ProgressBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextView.Headline">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Subtitle">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextView.Caption">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:contentDescription">@string/cd_icon</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorMidnightBlue</item>
+        <item name="colorControlActivated">@color/colorLightBlue</item>
+    </style>
+
+    <style name="RoundedImageView" parent="AppTheme">
+        <item name="sriv_left_bottom_corner_radius">5dp</item>
+        <item name="sriv_left_top_corner_radius">5dp</item>
+        <item name="sriv_right_bottom_corner_radius">5dp</item>
+        <item name="sriv_right_top_corner_radius">5dp</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="RoundedImageView.Poster">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="HorizontalListView" parent="AppTheme">
+        <item name="android:orientation">horizontal</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+    </style>
+
+    <style name="CustomFloatingActionButton" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/colorMidnightBlue</item>
+        <item name="android:elevation">3dp</item>
+        <item name="fabSize">mini</item>
+        <item name="borderWidth">0dp</item>
+    </style>
+</resources>

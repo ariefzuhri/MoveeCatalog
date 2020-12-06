@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CustomTheme"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/img_shape_result"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@drawable/shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_result" />
+
+    <com.joooonho.SelectableRoundedImageView
+        android:id="@+id/img_poster_result"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/cd_poster"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/RoundedImageView.Poster"/>
+
+    <TextView
+        android:id="@+id/tv_year_result"
+        style="@style/TextView.Subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/img_poster_result"
+        android:text="@string/loading"
+        app:layout_constraintEnd_toEndOf="@+id/img_shape_result"
+        app:layout_constraintStart_toEndOf="@+id/img_poster_result"
+        app:layout_constraintTop_toTopOf="@+id/guideline_result" />
+
+    <TextView
+        android:id="@+id/tv_title_result"
+        style="@style/TextView.Headline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_year_result"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@id/img_poster_result"
+        android:text="@string/loading"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_shape_result"
+        app:layout_constraintStart_toStartOf="@+id/tv_year_result"
+        app:layout_constraintTop_toBottomOf="@+id/tv_year_result" />
+
+    <TextView
+        android:id="@+id/tv_rate_result"
+        style="@style/TextView.Subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@+id/ratingbar_result"
+        android:text="@string/loading"
+        android:textColor="@color/colorLightBlue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingbar_result"
+        app:layout_constraintEnd_toEndOf="@+id/img_shape_result"
+        app:layout_constraintStart_toEndOf="@+id/ratingbar_result"
+        app:layout_constraintTop_toTopOf="@+id/ratingbar_result" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="35dp" />
+
+    <RatingBar
+        android:id="@+id/ratingbar_result"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/img_poster_result"
+        android:numStars="5"
+        android:stepSize="1"
+        android:theme="@style/RatingBar"
+        app:layout_constraintStart_toStartOf="@+id/tv_year_result"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_result" />
+
+    <ImageView
+        style="@style/Icon"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_movie"
+        app:layout_constraintBottom_toBottomOf="@+id/img_shape_result"
+        app:layout_constraintEnd_toEndOf="@+id/img_shape_result" />
+</androidx.constraintlayout.widget.ConstraintLayout>

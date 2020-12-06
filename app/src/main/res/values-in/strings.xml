@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">movee</string>
+    <string name="widget_title">Film favorit saya</string>
+
+    <string name="movie">Film</string>
+    <string name="tvshow">Acara tv</string>
+    <string name="discover">Temukan</string>
+
+    <string name="full_title">Judul lengkap:</string>
+    <string name="overview">Alur cerita</string>
+
+    <string name="tvs_episode">Jumlah episode</string>
+    <string name="tvs_season">Jumlah musim</string>
+    <string name="tvs_network">Jaringan televisi</string>
+
+    <string name="cd_poster">Poster film</string>
+    <string name="cd_tvs_poster">Poster acara televisi</string>
+    <string name="cd_backdrop">Salah satu cuplikan film</string>
+    <string name="cd_tvs_backdrop">Salah satu cuplikan acara televisi</string>
+    <string name="cd_in_theaters">Film yang sedang tayang</string>
+    <string name="cd_tvs_on_air">Acara tv yang sedang mengudara</string>
+    <string name="cd_credit">Orang-orang yang terlibat dalam pembuatan film</string>
+    <string name="cd_release_today_movie">Film yang rilis hari ini</string>
+    <string name="cd_upcoming_movie">Film yang akan datang</string>
+    <string name="cd_icon">Ikon</string>
+
+    <string name="minute">m</string>
+    <string name="hour">j</string>
+    <plurals name="episode" tools:ignore="UnusedQuantity">
+        <item quantity="one">episode</item>
+        <item quantity="other">episode</item>
+    </plurals>
+    <plurals name="season" tools:ignore="UnusedQuantity">
+        <item quantity="one">musim</item>
+        <item quantity="other">musim</item>
+    </plurals>
+    <plurals name="minuteperepisode" tools:ignore="UnusedQuantity">
+        <item quantity="one">menit/episode</item>
+        <item quantity="other">menit/episode</item>
+    </plurals>
+
+    <string name="crew">Kru di balik layar</string>
+    <string name="cast">Aktor utama</string>
+
+    <string name="setting">Setelan</string>
+    <string name="favorite">Favorit</string>
+    <string name="add_favorite">Favoritkan</string>
+    <string name="remove_favorite">Hapus dari daftar favorit</string>
+
+    <string name="datanotfound">(tidak ada data)</string>
+    <string name="notconnected">Maaf, kami belum bisa memuat data. Mohon pastikan internet terhubung dengan baik.</string>
+    <string name="error">Data gagal dimuat</string>
+    <string name="ok">Oke</string>
+
+    <string name="trending">Sedang tren</string>
+    <string name="in_theaters">Sedang diputar</string>
+    <string name="on_air">Sedang mengudara</string>
+    <string name="release_today">Rilis hari ini</string>
+    <string name="upcoming">Segera datang</string>
+
+    <string name="search_hint">Cari film atau acara tv…</string>
+    <string name="loading">Memuat…</string>
+    <string name="favorite_movies">Film favorit</string>
+    <string name="favorite_tvshows">Acara tv favorit</string>
+    <string name="search_results">Hasil pencarian</string>
+    <string name="search_info">Tidak ada hasil untuk ditampilkan.</string>
+    <string name="result_for">untuk</string>
+    <string name="remove_favorite_success">Dihapus dari daftar favorit</string>
+    <string name="add_favorite_success">Ditambahkan ke daftar favorit</string>
+    <string name="no_favorite">Daftar Anda masih kosong.</string>
+    <string name="no_release_today">(tidak ada film yang rilis hari ini)</string>
+
+    <string name="app_language">Bahasa aplikasi</string>
+    <string name="select_language">Pilih bahasa</string>
+    <string name="notification">Notifikasi</string>
+    <string name="daily_reminder">Pengingat harian</string>
+    <string name="daily_reminder_summary">Dapatkan pemberitahuan harian agar kamu tidak lupa membuka movee</string>
+    <string name="release_today_reminder">Beri tahu film yang rilis hari ini</string>
+    <string name="release_today_reminder_summary">Dapatkan pemberitahuan film apa saja yang baru saja rilis</string>
+
+    <string name="daily_reminder_title">Ayo lihat apa yang baru</string>
+    <string name="today_release_reminder_title">Film yang rilis hari ini</string>
+    <string name="daily_reminder_message">Jangan lupa membuka movee untuk lihat katalog terbaru</string>
+
+    <string name="view_all">Lihat semua</string>
+    <string name="load_more">Muat lagi</string>
+</resources>
