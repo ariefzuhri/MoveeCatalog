@@ -20,8 +20,7 @@ import java.util.Date;
 import static com.ariefzuhri.moveecatalog.widget.MyFavoriteMoviesWidget.UPDATE_WIDGET;
 
 public class AppHelper {
-    public static final String API_KEY = "***REMOVED***";
-
+    
     public static void loadImage(Activity activity, ImageView imgView, String imgPath, String imgSize){
         Glide.with(activity)
                 .load("https://image.tmdb.org/t/p/" + imgSize + imgPath)
